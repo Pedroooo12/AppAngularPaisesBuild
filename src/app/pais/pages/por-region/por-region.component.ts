@@ -10,9 +10,34 @@ import { PaisService } from '../../services/pais.service';
 })
 export class PorRegionComponent {
 
-
+  subregions: string[] = [
+    "Western Africa",
+    "Eastern Asia",
+    "Western Asia",
+    "Caribbean",
+    "Eastern Africa",
+    "Polynesia",
+    "Southeast Europe",
+    "South-Eastern Asia",
+    "Central America",
+    "South America",
+    "Northern Europe",
+    "Southern Asia",
+    "Australia and New Zealand",
+    "Northern Africa",
+    "Middle Africa",
+    "Micronesia",
+    "North America",
+    "Southern Europe",
+    "Southern Africa",
+    "Central Asia",
+    "Eastern Europe",
+    "Western Europe",
+    "Melanesia",
+    "Central Europe"
+  ];
   
-  regiones: string[] = ['eu', 'efta', 'caricom', 'pa', 'au','usan','eeu','al','asean','cais','cefta','nafta','saarc'];
+  //regiones: string[] = ['eu', 'efta', 'caricom', 'pa', 'au','usan','eeu','al','asean','cais','cefta','nafta','saarc'];
   regionActiva: string = '';
   paises: Country[] = [];
 

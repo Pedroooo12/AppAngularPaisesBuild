@@ -1,11 +1,11 @@
 <div class="animate__animated animate__fadeIn">  
-    <h3>Buscar por Regíon <small> {{regionActiva | titlecase }} </small></h3>
+    <h3>Buscar por SubRegiones <small> {{regionActiva | titlecase }} </small></h3>
     <hr>
-    <h5>Seleccione la región: </h5>
+    <h5>Seleccione la SubRegiones: </h5>
 
     <div class="row">
         <div class="col">
-            <button *ngFor="let region of regiones" 
+            <button *ngFor="let region of subregions" 
             [class]="getclassCSS( region )"
             (click)="buscar( region )"
             (click)="activarRegion( region)">
